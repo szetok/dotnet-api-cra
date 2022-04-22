@@ -36,16 +36,6 @@
         "${workspaceFolder}/src/DotnetApiCra.csproj"
       ],
       "problemMatcher": "$msCompile"
-    },
-    {
-      "label": "npm start",
-      "command": "npm",
-      "type": "shell",
-      "args": [
-        "start",
-        "--prefix",
-        "clientapp"
-      ]
     }
   ]
 }
