@@ -1,13 +1,18 @@
-import './App.css';
-import { FetchData } from './FetchData';
+import React from 'react';
+import { Routes, Route } from "react-router-dom";
+import { Layout } from './components/templates/Layout';
+import { Counter } from './components/organisms/Counter';
+import { FetchData } from './components/organisms/FetchData';
+import './styles/App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <FetchData />
-      </header>
-    </div>
+    <Layout>
+      <Routes>
+        <Route path='/' element={<Counter />} />
+        <Route path='/fetch-data' element={<FetchData />} />
+      </Routes>
+    </Layout>
   );
 }
 
