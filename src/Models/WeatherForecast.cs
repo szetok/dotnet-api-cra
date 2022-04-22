@@ -1,4 +1,4 @@
-namespace DotnetApiCra;
+namespace DotnetApiCra.Models;
 
 public class WeatherForecast
 {
