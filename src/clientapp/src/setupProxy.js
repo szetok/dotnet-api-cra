@@ -1,15 +1,15 @@
-const { createProxyMiddleware } = require('http-proxy-middleware');
+const { createProxyMiddleware } = require("http-proxy-middleware");
 
-module.exports = function(app) {
+module.exports = function (app) {
   app.use(
-    '/api/weatherforecast',
+    "/api/weatherforecast",
     createProxyMiddleware({
-      target: 'https://localhost:7056',
+      target: "https://localhost:7056",
       changeOrigin: false,
       secure: false,
       headers: {
-        Connection: 'Keep-Alive'
-      }
+        Connection: "Keep-Alive",
+      },
     })
   );
 };
