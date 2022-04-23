@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { getWeatherForecast } from "../../api/statmilk";
+import { getWeatherForecast } from "../apis/sampleApi";
 
 export class FetchData extends Component {
   static displayName = FetchData.name;
