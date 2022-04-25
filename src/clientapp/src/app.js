@@ -5,7 +5,7 @@ import { Counter } from "./pages/counter";
 import { FetchData } from "./pages/fetchData";
 import "./app.css";
 
-function App() {
+export default function App() {
   return (
     <Layout>
       <Routes>
@@ -15,5 +15,3 @@ function App() {
     </Layout>
   );
 }
-
-export default App;
